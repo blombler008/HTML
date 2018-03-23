@@ -1,0 +1,22 @@
+include includes/header.pug
+div(id="nav")
+	h1(class="navHeaderTxt noselect") Willkommen!
+	div(id="buttons")
+		a(href=URL,class="NavBtn noselect",target="_SELF") Sinusbot
+		a(href="https://bcetha.de/",class="NavBtn noselect",target="_SELF") BlackCethas
+		a(class="NavBtn noselect Onpage",target="_SELF") Start
+		a(class="NavBtn noselect",target="_SELF") forum
+div(align="center",style="overflow:hidden;")
+	iframe(id="iframe", height="80%", width="80%", scrolling="auto", frameborder="0")
+footer(id="footer")
+	p(id="footertext") © BLOMBLER 2018-2021 - Alle Rechte vorbehalten.
+//-div(id="container")
+	div(id="SHBox")
+		button(id="SHBtn" ) ▲
+	//-div(id="VidCodes")
+		//- loops through an array from the app script for the random string
+		each text in textList
+			div(class="CodeWraper")
+				p(class="monospaceStyle")!= text[0] + ' '
+					a(href="/watch/"+text[0],class="Btn")!= text[1]
+					

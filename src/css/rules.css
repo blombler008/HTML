@@ -1,0 +1,101 @@
+body{
+    margin:0;
+    padding: 0;
+}
+::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.0);
+}
+::-webkit-scrollbar-corner{
+    background: #fafafa00;
+}
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	  -webkit-user-select: none; /* Safari */
+	   -khtml-user-select: none; /* Konqueror HTML */
+		 -moz-user-select: none; /* Firefox */
+		  -ms-user-select: none; /* Internet Explorer/Edge */
+			  user-select: none; /* Non-prefixed version, currently
+									supported by Chrome and Opera */
+}
+#welcome{
+    background-color: #00189e;
+}
+
+#backimg{
+	width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+.wmsg{
+    /* #d31c1c */
+    margin:0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+
+    background-color: #00189e;
+    color: #fafafa;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
+.wmsg::first-line{
+    padding-top: 20px;
+    padding-bottom: 0;
+    font-size: 25px;
+}
+
+#footer {
+    background-color: #00189e;
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    bottom: 0;
+}
+#footertext{
+    position: relative;
+    color: #fafafa;
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    font-size: 20px;
+    text-align: left;
+    top: -15px;
+    margin-left: 20px;
+}
+.rulestext{
+    margin:0;
+    padding:2px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.rulestext::first-letter{
+    font-weight: bold;
+    font-size: 25px;
+}
+.rulestext:nth-child(even){
+    background: rgba(219, 219, 219, 0.8);
+}
+.rulestext:nth-child(odd){
+    background: rgba(255, 255, 255, 0.8);
+}
+#rules{
+    overflow: scroll;
+    margin: 0 auto;
+    width: 72%;
+    height: 80%;
+    margin-bottom: 20px;
+}
+#textofrules{
+    float: left;
+}
